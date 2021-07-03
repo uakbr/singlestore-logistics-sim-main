@@ -1,7 +1,5 @@
 # Reference Architecture using SingleStore and Redpanda for global logistics
 
-> **📯 INFO:** For the story behind this code (and epic dashboards), [check out the blog post](https://www.singlestore.com/blog/scaling-worldwide-parcel-logistics-with-singlestore-and-vectorized/)!
-
 This repository provides a reference architecture which simulates the parcel
 tracking system of a hypothetical global logistics company using
 [SingleStore](https://singlestore.com) and [Redpanda](https://vectorized.io/).
@@ -41,8 +39,6 @@ rp-setup     /bin/bash -c rpk --brokers ...   Exit 0
 s2-agg-0     /startup                         Up
 simulator    ./simulator --config confi ...   Up
 ```
-
-> **NOTE:** If you are running the above on a mac you may need to increase the docker system resources. We have found that 6 GB of RAM and 2 CPUs is sufficient to run this demo - but the more you provide to docker the faster things will go. :)
 
 3. You can also check the logs using
 
